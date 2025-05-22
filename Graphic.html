@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Популярність товару</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <div>
+        <img class="nav_image" src="ball.png" width="50px" height="auto" />
+      </div>
+
+      <div class="navig">
+        <button
+          class="button-navig"
+          onclick="window.location.href='index.html'"
+        >
+          Всі товари
+        </button>
+        <button
+          class="button-navig"
+          onclick="window.location.href='index.html'"
+        >
+          Сороконіжки
+        </button>
+        <button
+          class="button-navig"
+          onclick="window.location.href='index.html'"
+        >
+          Бутси
+        </button>
+        <button
+          class="button-navig"
+          onclick="window.location.href='index.html'"
+          onclick="openCartModal()"
+        >
+          Корзина
+        </button>
+        <button
+          id="gistogramButton"
+          onclick="window.location.href='Graphic.html'"
+        >
+          Гістограми
+        </button>
+      </div>
+    </div>
+
+    <canvas id="popularChart"></canvas>
+  </body>
+  <script src="Graphic.js"></script>
+</html>
